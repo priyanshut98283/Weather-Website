@@ -10,7 +10,7 @@
 
 }
 body {
-  background-image: url("bg-weather.avif");
+  background-image: url("assets/bg-weather.avif");
   background-repeat: no-repeat;
   background-attachment:fixed;
   background-position: center center;

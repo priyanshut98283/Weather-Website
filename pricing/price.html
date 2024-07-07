@@ -1,122 +1,96 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-* {
-  box-sizing: border-box;
-}
-body{
-    font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-}
-
-header {
-            background-color: #3498db;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-        }
-
-.columns {
-  float: left;
-  width: 33.3%;
-  padding: 8px;
-}
-
-.price {
-  list-style-type: none;
-  border: 1px solid #eee;
-  margin: 0;
-  padding: 0;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.price:hover {
-  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
-}
-
-.price .header {
-  background-color: #111;
-  color: white;
-  font-size: 25px;
-}
-
-.price li {
-  border-bottom: 1px solid #eee;
-  padding: 20px;
-  text-align: center;
-}
-
-.price .grey {
-  background-color: #eee;
-  font-size: 20px;
-}
-
-.button {
-background-color: #04AA6D;
-border: none;
-color: white;
-padding: 10px 25px;
-text-align: center;
-text-decoration: none;
-font-size: 18px;
-}
-
-@media only screen and (max-width: 600px) {
-.columns {
-  width: 100%;
-}
-}
-</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="price.css">
 </head>
+
 <body>
+  <nav class="navbar navbar-expand-lg sticky-top" style="background-color: #33a3f3;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">CloudInfo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
 
-    <header>
-        <h1>Pricing</h1>
-    </header>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../weather.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../features/features.html">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pricing/price.html">Pricing</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Solutions
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../download/download.html">Download App</a></li>
+              <li><a class="dropdown-item" href="../docs/docs.html">Read docs</a></li>
+              <li><a class="dropdown-item" href="../contact/contact.html">Contact</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-<h2 style="text-align:center">Flexible Pricing of CloudInfo</h2>
-<p style="text-align:center">Buy according to your needs.</p>
+  <header>
+    <h1>Pricing</h1>
+  </header>
 
-<div class="columns">
-<ul class="price">
-  <li class="header">Basic</li>
-  <li class="grey">$ 9.99 / year</li>
-  <li>10GB Storage</li>
-  <li>10 Emails</li>
-  <li>10 Domains</li>
-  <li>1GB Bandwidth</li>
-  <li class="grey"><a href="#" class="button">Sign Up</a></li>
-</ul>
-</div>
+  <h2 style="text-align:center">Flexible Pricing of CloudInfo</h2>
+  <p style="text-align:center">Buy according to your needs.</p>
 
-<div class="columns">
-<ul class="price">
-  <li class="header" style="background-color:#04AA6D">Pro</li>
-  <li class="grey">$ 24.99 / year</li>
-  <li>25GB Storage</li>
-  <li>25 Emails</li>
-  <li>25 Domains</li>
-  <li>2GB Bandwidth</li>
-  <li class="grey"><a href="#" class="button">Sign Up</a></li>
-</ul>
-</div>
+  <div class="columns">
+    <ul class="price">
+      <li class="header" style="background-color:#dc18c8">Basic</li>
+      <li class="grey">$ 9.99 / year</li>
+      <li>100 api calls/month</li>
+      <li>Limited ads</li>
+      <li>Basic radar</li>
+      <li>Upgraded lightning coverage and alerts</li>
+      <li class="grey"><a href="#" class="button">Buy</a></li>
+    </ul>
+  </div>
 
-<div class="columns">
-<ul class="price">
-  <li class="header">Premium</li>
-  <li class="grey">$ 49.99 / year</li>
-  <li>50GB Storage</li>
-  <li>50 Emails</li>
-  <li>50 Domains</li>
-  <li>5GB Bandwidth</li>
-  <li class="grey"><a href="#" class="button">Sign Up</a></li>
-</ul>
-</div>
+  <div class="columns">
+    <ul class="price">
+      <li class="header" style="background-color:#dc8e18">Pro</li>
+      <li class="grey">$ 24.99 / year</li>
+      <li>1000 api calls/month</li>
+      <li>No ads</li>
+      <li>Premium radar</li>
+      <li>Upgraded lightning coverage and alerts</li>
+      <li class="grey"><a href="#" class="button">Buy</a></li>
+    </ul>
+  </div>
+
+  <div class="columns">
+    <ul class="price">
+      <li class="header" style="background-color:#dc186d">Premium</li>
+      <li class="grey">$ 49.99 / year</li>
+      <li>10000 api calls/month</li>
+      <li>No ads</li>
+      <li>Premium radar</li>
+      <li>Upgraded lightning coverage and alerts</li>
+      <li class="grey"><a href="#" class="button">Buy</a></li>
+    </ul>
+  </div>
+  <script src="weather.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 
 </body>
+
 </html>
